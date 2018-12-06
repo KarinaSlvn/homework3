@@ -1,0 +1,63 @@
+*{
+    font-family: Arial;
+}
+.board{
+    position: relative;
+    left: 65%;
+    width: 555px;
+    height: 545px;
+    border: 2px solid black;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.board--row{
+    height: 60px;
+    display: table;
+    margin: 0 auto;
+}
+.white{
+    border: 1px solid black;
+    width: 59px;
+    height: 100%;
+    display: inline-block;
+}
+.black{
+    background-color: black;
+    width: 60px;
+    height: 100%;
+    display: inline-block;
+}
+.letter{
+    display: inline-block;
+    width: 59px;
+}
+.number{
+    width: 30px;
+    height: 60px;
+    display: table-cell;
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.revers-number{
+    width: 30px;
+    display: table-cell;
+    font-size: 18px;
+    font-weight: bold;
+    transform: rotate(180deg);
+    height: 60px;
+    vertical-align: middle;
+}
+.revers-letters{
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transform: rotate(180deg);
+
+}
+.letters{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
