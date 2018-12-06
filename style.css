@@ -1,9 +1,12 @@
-*{
+* {
     font-family: Arial;
+    box-sizing: border-box;
 }
-.board{
-    position: relative;
-    left: 65%;
+
+.board {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 555px;
     height: 545px;
     border: 2px solid black;
@@ -11,28 +14,33 @@
     display: table-cell;
     vertical-align: middle;
 }
-.board--row{
+
+.board--row {
     height: 60px;
     display: table;
     margin: 0 auto;
 }
-.white{
+
+.white {
     border: 1px solid black;
-    width: 59px;
+    width: 60px;
     height: 100%;
     display: inline-block;
 }
-.black{
+
+.black {
     background-color: black;
     width: 60px;
     height: 100%;
     display: inline-block;
 }
-.letter{
+
+.letter {
     display: inline-block;
-    width: 59px;
+    width: 60px;
 }
-.number{
+
+.number {
     width: 30px;
     height: 60px;
     display: table-cell;
@@ -40,7 +48,8 @@
     font-weight: bold;
     vertical-align: middle;
 }
-.revers-number{
+
+.revers-number {
     width: 30px;
     display: table-cell;
     font-size: 18px;
@@ -49,15 +58,23 @@
     height: 60px;
     vertical-align: middle;
 }
-.revers-letters{
+
+.revers-letters {
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
     transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-.letters{
+
+.letters {
     margin-top: 5px;
     font-size: 18px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
